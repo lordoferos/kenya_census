@@ -1,4 +1,4 @@
-# Google Capstone Project Case Study - Insights from the 2019 Kenyan Census
+# Google Data Analytics Capstone - Insights from the 2019 Kenyan Census
 
 ## Introduction
 
