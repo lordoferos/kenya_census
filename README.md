@@ -12,3 +12,5 @@ The 2019 Kenya Population and Housing Census was the eighth to be conducted in K
 This project is a showcase of the steps of data analysis process where we start from raw data to actionable insights. The main tool of analysis is R, but I will also use Excel and Tableau depending on the analysis or visualization required. You can find more details about the data used [here](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-19/readme.md)
 
 ![Figure 1](household_sizes.png)
+
+![Figure 2](searched_goods_online.png)
