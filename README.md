@@ -10,3 +10,5 @@ The data is obtained from the `rKenyaCensus` package courtesy of [Shelmith Kariu
 The 2019 Kenya Population and Housing Census was the eighth to be conducted in Kenya since 1948 and was conducted from the night of 24th/25th to 31st August 2019. Kenya leveraged on technology to capture data during cartographic mapping, enumeration and data transmission, making the 2019 Census the first paperless census to be conducted in Kenya.
 
 This project is a showcase of the steps of data analysis process where we start from raw data to actionable insights. The main tool of analysis is R, but I will also use Excel and Tableau depending on the analysis or visualization required. You can find more details about the data used [here](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-19/readme.md)
+
+![Figure 1](household_sizes.png)
