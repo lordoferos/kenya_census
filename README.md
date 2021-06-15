@@ -13,7 +13,17 @@ This project is a showcase of the steps of data analysis process where we start 
 
 ![Figure 1](household_sizes.png)
 
+### Summary of the Problem
+
 | Header Column One | Header Column Two |
 | ------ | :----- |
+| Title |  |
+| Industry of focus |  |
+| Problem statement |  |
+| Business use case |  |
+| Goals & Metrics | |
+| Deliverables | |
+| Datasets available | |
+| Datasets list | |
 
 ![Figure 2](searched_goods_online.png)
