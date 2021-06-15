@@ -13,4 +13,7 @@ This project is a showcase of the steps of data analysis process where we start 
 
 ![Figure 1](household_sizes.png)
 
+| Header Column One | Header Column Two |
+| ------ | :----- |
+
 ![Figure 2](searched_goods_online.png)
