@@ -1,5 +1,4 @@
-County,Population,NumberOfHouseholds,AverageHouseholdSize
-Kenya   ,47213282,12143913,3.9
+county,population,number_of_households,average_household_size
 Mombasa   ,1190987,378422,3.1
 Kwale  ,858748,173176,5
 Kilifi  ,1440958,298472,4.8

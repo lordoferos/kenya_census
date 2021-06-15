@@ -79,8 +79,34 @@ We see that counties with high average household size have fewer households over
 
 ## Births data
 
-```{r}
+### Total births
 
+```{r}
+# Top ten counties with most births in the last 5 years reference 2019
+births_county %>% arrange(-total) %>%
+  slice(1:10) %>% 
+  select(county, total)
 ```
 
 
+The counties with the most number of births in the past 5 years referenced 2019 were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Mombasa, Narok and Kajiado.
+
+```{r}
+# Bottom counties with least births in the last 5 years reference 2019
+births_county %>% arrange(total) %>%
+  slice(1:10) %>% 
+  select(county, total)
+```
+
+The counties with the least number of total births in the past 5 years referenced 2019 were Lamu, Isiolo, Samburu, Taita Taveta, Tana River, Tharaka Nith, Marsabit, Elgeyo Marakwet, vihiga and Laikipia.
+
+Which counties have the least number of notified births?
+
+```{r}
+# Bottom counties with least births in the last 5 years reference 2019
+births_county %>% arrange(percent_notified) %>%
+  slice(1:10) %>% 
+  select(county, percent_notified)
+```
+
+The counties with the least number of notified births were Wajir, Mandera, West Pokot, marsabit, Turkana, Samburu, Garissa, Tana River, Isiolo and Narok.
