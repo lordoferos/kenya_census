@@ -15,9 +15,8 @@ This project is a showcase of the steps of data analysis process where we start 
 
 ### Summary of the Problem
 
-| Column One | Column Two |
-| ------ | :----- |
 | **Title** | Which counties in Kenya contributed to most online customers in 2019?  |
+| ------ | :----- |
 | **Industry of focus** | E-commerce  |
 | **Problem statement** |  |
 | **Business use case** |  |
