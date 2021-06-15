@@ -16,13 +16,13 @@ This project is a showcase of the steps of data analysis process where we start 
 ### Summary of the Problem
 |        |        |
 | ------ | :----- |
-| **Title** | Which counties in Kenya contributed to most online customers in 2019?  |
+| **Title** | Online searches for goods grouped by counties in Kenya  |
 | **Industry of focus** | E-commerce  |
-| **Problem statement** |  |
-| **Business use case** |  |
-| **Goals & Metrics** | |
-| **Deliverables** | |
-| **Datasets available** | |
-| **Datasets list** | |
+| **Problem statement** | Which counties in Kenya contributed to most online customers in 2019? |
+| **Business use case** | How can e-commerce companies identify emerging markets and expand marketing to those counties? |
+| **Goals & Metrics** | Correlation, Significance tests, Visualizations |
+| **Deliverables** | A solution and suggestion that can help businesses in these markets |
+| **Datasets available** | Yes |
+| **Datasets list** | Data obtained from the rKenyaCensus package and based on the 2019 Kenyan Census. |
 
 ![Figure 2](searched_goods_online.png)
