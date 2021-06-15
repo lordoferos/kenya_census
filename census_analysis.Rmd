@@ -1,6 +1,6 @@
 ---
-title: "E-commerce in Kenya"
-subtitle: "How many Kenyans buy goods online?"
+title: "Kenya 2019 Census"
+subtitle: "Summary analyses of the datasets"
 author: "Levi Orero"
 date: "6/12/2021"
 output: pdf_document
@@ -13,6 +13,47 @@ knitr::opts_chunk$set(echo = FALSE)
 # Analysis
 
 This section includes basic analysis to understand the data for each of the five datasets.
+
+## Population data
+
+```{r}
+# Arrange the top 10 counties by male population
+pop_county %>% arrange(-male) %>% slice(1:10) %>% 
+  select(county, male)
+```
+
+The counties with the highest male population were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Machakos, Kilifi, Mombasa, Kisii.
+
+```{r}
+# Arrange the top 10 counties by female population
+pop_county %>% arrange(-female) %>% slice(1:10) %>% 
+  select(county, female)
+```
+
+The counties with the highest female population were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Machakos, Kisii, Mombasa.
+
+```{r}
+# Arrange the top 10 counties by intersex population
+pop_county %>% arrange(-intersex) %>% slice(1:10) %>% 
+  select(county, intersex)
+```
+
+The counties with highest number of intersex individuals were Nairobi, Kiambu, Nakuru, Wajir, Meru, Kakamega, Kajiado, Kisii, Mandera and Bungoma.
+
+```{r}
+# Arrange the top 10 counties by female:male ratio population
+pop_county %>% mutate(ratio = round(female/male,2)) %>% 
+  arrange(-ratio) %>% slice(1:10) %>% 
+  select(county, ratio)
+```
+
+```{r}
+# Arrange the bottom 10 counties by female:male ratio population
+pop_county %>% mutate(ratio = round(female/male,2)) %>% 
+  arrange(ratio) %>% slice(1:10) %>% 
+  select(county, ratio)
+```
+
 
 ## Households data
 
@@ -109,4 +150,16 @@ births_county %>% arrange(percent_notified) %>%
   select(county, percent_notified)
 ```
 
-The counties with the least number of notified births were Wajir, Mandera, West Pokot, marsabit, Turkana, Samburu, Garissa, Tana River, Isiolo and Narok.
+The counties with the least number of notified births were Wajir, Mandera, West Pokot, Marsabit, Turkana, Samburu, Garissa, Tana River, Isiolo and Narok.
+
+## Assets Owned Data
+
+### Stand alone radio
+```{r}
+# Top counties with radio percentage ownership
+assets_owned %>% arrange(-stand_alone_radio) %>%
+  slice(1:10) %>% 
+  select(county, stand_alone_radio)
+```
+
+
