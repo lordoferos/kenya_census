@@ -27,3 +27,5 @@ Figure 1: Number of households vs household sizes
 | **Datasets list** | Data obtained from the rKenyaCensus package and based on the 2019 Kenyan Census. |
 
 ![Figure 2](searched_goods_online.png)
+
+Figure 2: Number of persons who searched for goods online
