@@ -15,7 +15,7 @@ This project is a showcase of the steps of data analysis process where we start 
 
 ### Summary of the Problem
 
-| Header Column One | Header Column Two |
+| Column One | Column Two |
 | ------ | :----- |
 | Title |  |
 | Industry of focus |  |
