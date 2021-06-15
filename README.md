@@ -14,9 +14,9 @@ This project is a showcase of the steps of data analysis process where we start 
 ![Figure 1](household_sizes.png)
 
 ### Summary of the Problem
-
-| **Title** | Which counties in Kenya contributed to most online customers in 2019?  |
+|        |        |
 | ------ | :----- |
+| **Title** | Which counties in Kenya contributed to most online customers in 2019?  |
 | **Industry of focus** | E-commerce  |
 | **Problem statement** |  |
 | **Business use case** |  |
