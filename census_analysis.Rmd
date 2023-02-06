@@ -63,7 +63,7 @@ gr_001 %>%
   fig1
   # write figure
 ggsave(filename = "figures/males_population.jpg", width = 300, height = 250,
-       units = "mm")
+       units = "mm", dpi = 600)
 ```
 
 
@@ -96,7 +96,7 @@ gr_002 %>%
   fig2
   # write figure
 ggsave(filename = "figures/females_population.jpg", width = 300, height = 250,
-       units = "mm")
+       units = "mm", dpi = 600)
 ```
 
 
