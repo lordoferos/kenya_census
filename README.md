@@ -11,7 +11,8 @@ The 2019 Kenya Population and Housing Census was the eighth to be conducted in K
 
 This project is a showcase of the steps of data analysis process where we start from raw data to actionable insights. The process involves setting a problem statement, business use case, goals and metrics then finally show how the data has answered the question. The main tool of analysis is R, but I will also use Excel and Tableau depending on the analysis or visualization required. You can find more details about the data used [here](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-19/readme.md)
 
-<img src="household_sizes.png" alt="households" width="600"/>
+<img src="figures/household_sizes.png" alt="households" width="600"/>
+
 Figure 1: Number of households vs household sizes
 
 ### Summary of the Problem
@@ -26,9 +27,9 @@ Figure 1: Number of households vs household sizes
 | **Datasets available** | Yes |
 | **Datasets list** | Data obtained from the rKenyaCensus package and based on the 2019 Kenyan Census. |
 
-![Figure 2](searched_goods_online.png)
+![Figure 2: Number of persons who searched for goods online](figures/searched_goods_online.png)
 
-Figure 2: Number of persons who searched for goods online
+
 
 # Methodology
 
@@ -37,6 +38,14 @@ The methodology section of this work describes the tools and processes used to a
 For data wrangling and munging, the tidyverse package was used in R, while various packages including tmap, rgdal, sp, sf, and raster were used for data visualization. These packages were essential for creating maps that provided detailed information about the areas in focus. In addition, QGIS software was also used to create additional maps to provide a better understanding of the study area.
 
 Finally, an interactive dashboard was created using Shiny, which allowed users to play with the data and get specific summaries about a location in Kenya based on the 2019 census. This dashboard provided an interactive process that allowed users to easily explore and understand the census results. The results of the analysis and the code were committed to GitHub for sharing and collaboration.
+
+# Results
+
+## Quick Summaries
+### Male population by counties
+Here, I list the top 10 counties in terms of the male population:
+
+![Figure 3: Ten counties with the highest number of male population](figures/males_population.png)
 
 
 
