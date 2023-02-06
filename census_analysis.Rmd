@@ -69,11 +69,36 @@ ggsave(filename = "figures/males_population.jpg", width = 300, height = 250,
 
 ```{r}
 # Arrange the top 10 counties by female population
+gr_002 <- 
 pop_county %>% arrange(-female) %>% slice(1:10) %>% 
   select(county, female)
+gr_002
 ```
 
 The counties with the highest female population were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Machakos, Kisii, Mombasa.
+
+```{r}
+# write out the summary graph
+fig2 <- 
+gr_002 %>% 
+  ggplot(aes(x = reorder(county,female),
+             y = female)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  # flip coordinates for better readability
+  coord_flip() +
+  # add theme and labels
+  labs(x = "County",
+       y = "Population of females",
+       caption = "Source: Kenya Population and Housing Census Results 2019") +
+  theme_minimal() +
+  # Change scale
+  scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) # millions
+  fig2
+  # write figure
+ggsave(filename = "figures/females_population.jpg", width = 300, height = 250,
+       units = "mm")
+```
+
 
 ```{r}
 # Arrange the top 10 counties by intersex population
