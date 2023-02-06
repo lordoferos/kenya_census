@@ -32,5 +32,12 @@ Figure 2: Number of persons who searched for goods online
 
 # Methodology
 
-For this work, I used Tableau to visualize data and R to conduct analyses. Data were analysed on R Studio desktop and the results and code were then commited to GitHub.
+The methodology section of this work describes the tools and processes used to analyze and visualize data related to the 2019 census results in Kenya. The data analysis was conducted using the R programming language in R Studio Desktop, while data visualization was performed using Tableau and QGIS software.
+
+For data wrangling and munging, the tidyverse package was used in R, while various packages including tmap, rgdal, sp, sf, and raster were used for data visualization. These packages were essential for creating maps that provided detailed information about the areas in focus. In addition, QGIS software was also used to create additional maps to provide a better understanding of the study area.
+
+Finally, an interactive dashboard was created using Shiny, which allowed users to play with the data and get specific summaries about a location in Kenya based on the 2019 census. This dashboard provided an interactive process that allowed users to easily explore and understand the census results. The results of the analysis and the code were committed to GitHub for sharing and collaboration.
+
+
+
 
