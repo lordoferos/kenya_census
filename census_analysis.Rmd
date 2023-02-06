@@ -59,7 +59,11 @@ gr_001 %>%
        caption = "Source: Kenya Population and Housing Census Results 2019") +
   theme_minimal() +
   # Change scale
-  scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) # millions
+  scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6))+ # millions
+  # add font size
+  theme(axis.text = element_text(size = 13),
+        axis.title = element_text(size = 13),
+        plot.caption = element_text(size = 12))
   fig1
   # write figure
 ggsave(filename = "figures/males_population.jpg", width = 300, height = 250,
@@ -92,7 +96,11 @@ gr_002 %>%
        caption = "Source: Kenya Population and Housing Census Results 2019") +
   theme_minimal() +
   # Change scale
-  scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) # millions
+  scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) + # millions
+  # add font size
+  theme(axis.text = element_text(size = 13),
+        axis.title = element_text(size = 13),
+        plot.caption = element_text(size = 12))
   fig2
   # write figure
 ggsave(filename = "figures/females_population.jpg", width = 300, height = 250,
