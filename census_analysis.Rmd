@@ -17,6 +17,14 @@ This section includes basic analysis to understand the data for each of the five
 ## Population data
 
 ```{r}
+# load the required libraries
+library(tidyverse)
+library(sf)
+library(sp)
+library(rgdal)
+```
+
+```{r}
 # Arrange the top 10 counties by male population
 pop_county %>% arrange(-male) %>% slice(1:10) %>% 
   select(county, male)
