@@ -45,7 +45,7 @@ Finally, an interactive dashboard was created using Shiny, which allowed users t
 ### Male population by counties
 Here, I list the top 10 counties in terms of the male population:
 
-![Figure 3: Ten counties with the highest number of male population](figures/males_population.png)
+![Figure 3: Ten counties with the highest number of male population](figures/males_population.jpg)
 
 
 
