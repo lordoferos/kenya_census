@@ -29,3 +29,8 @@ Figure 1: Number of households vs household sizes
 ![Figure 2](searched_goods_online.png)
 
 Figure 2: Number of persons who searched for goods online
+
+# Methodology
+
+For this work, I used Tableau to visualize data and R to conduct analyses. Data were analysed on R Studio desktop and the results and code were then commited to GitHub.
+
