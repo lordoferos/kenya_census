@@ -22,15 +22,50 @@ library(tidyverse)
 library(sf)
 library(sp)
 library(rgdal)
+library(rKenyaCensus)
+library(janitor)
+library(scales)
 ```
 
 ```{r}
+# read in the data
+pop_county <- read_csv("data/pop_county.csv")
+# Clean the names
+pop_county <- clean_names(pop_county)
+```
+
+
+
+```{r}
 # Arrange the top 10 counties by male population
-pop_county %>% arrange(-male) %>% slice(1:10) %>% 
+gr_001 <- pop_county %>% arrange(-male) %>% slice(1:10) %>% 
   select(county, male)
+gr_001
 ```
 
 The counties with the highest male population were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Machakos, Kilifi, Mombasa, Kisii.
+```{r}
+# write out the summary graph
+fig1 <- 
+gr_001 %>% 
+  ggplot(aes(x = reorder(county,male),
+             y = male)) +
+  geom_bar(stat = "identity") +
+  # flip coordinates for better readability
+  coord_flip() +
+  # add theme and labels
+  labs(x = "County",
+       y = "Population of males",
+       caption = "Source: Kenya Population and Housing Census Results 2019") +
+  theme_minimal() +
+  # Change scale
+  scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) # millions
+  fig1
+  # write figure
+ggsave(filename = "figures/males_population.png", width = 300, height = 250,
+       units = "mm")
+```
+
 
 ```{r}
 # Arrange the top 10 counties by female population
