@@ -46,7 +46,7 @@ Finally, an interactive dashboard was created using Shiny, which allowed users t
 
 Here, I list the top 10 counties in terms of the male population:
 
-![Figure 3: Ten counties with the highest number of male population](figures/males_population.jpg)
+![Figure 3: Ten counties with the highest number of male population](figures/males_population.png)
 
 The counties with the highest male population were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Machakos, Kilifi, Mombasa, Kisii.
 
@@ -54,7 +54,7 @@ The counties with the highest male population were Nairobi, Kiambu, Nakuru, Kaka
 
 Here, I list the top 10 counties in terms of the female population:
 
-![Figure 4: Ten counties with the highest number of female population](figures/females_population.jpg)
+![Figure 4: Ten counties with the highest number of female population](figures/females_population.png)
 
 The counties with the highest female population were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Machakos, Kisii, Mombasa.
 

@@ -62,7 +62,7 @@ gr_001 %>%
   scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) # millions
   fig1
   # write figure
-ggsave(filename = "figures/males_population.jpg", width = 300, height = 250,
+ggsave(filename = "figures/males_population.png", width = 300, height = 250,
        units = "mm")
 ```
 
@@ -95,7 +95,7 @@ gr_002 %>%
   scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) # millions
   fig2
   # write figure
-ggsave(filename = "figures/females_population.jpg", width = 300, height = 250,
+ggsave(filename = "figures/females_population.png", width = 300, height = 250,
        units = "mm")
 ```
 
