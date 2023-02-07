@@ -25,7 +25,23 @@ library(rgdal)
 library(rKenyaCensus)
 library(janitor)
 library(scales)
+library(ggbeeswarm)
+library(geomtextpath)
+library(glue)
+library(sysfonts)
+library(showtext)
+library(ggrepel)
 ```
+
+
+```{r}
+# import fonts
+sysfonts::font_add_google("Roboto Slab","rs")
+showtext::showtext_auto()
+showtext_opts(dpi=300)
+#sysfonts::font_add('Font Awesome 6 Brands', 'fonts/Font Awesome 6 Brands-Regular-400.otf')
+```
+
 
 ```{r}
 # read in the data
@@ -117,7 +133,16 @@ gr_003 <- pop_county %>% arrange(-intersex) %>% slice(1:10) %>%
 The counties with highest number of intersex individuals were Nairobi, Kiambu, Nakuru, Wajir, Meru, Kakamega, Kajiado, Kisii, Mandera and Bungoma.
 
 ```{r}
+# import social
+source('socials.R')
+```
+
+
+```{r}
 # Plot a graph
+# set caption
+captionk = paste("Source: {Kenya Population and Housing Census Results 2019}<br>",
+                 social_caption())
 # write out the summary graph
 fig3 <- 
 gr_003 %>% 
@@ -131,6 +156,7 @@ gr_003 %>%
        y = "Population of intersex individuals",
        caption = "Source: Kenya Population and Housing Census Results 2019") +
   theme_minimal() +
+  #annotate("text", label = captionk)+
   # Change scale
   #scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) + # millions
   # add font size
