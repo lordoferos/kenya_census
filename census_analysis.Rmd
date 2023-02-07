@@ -110,11 +110,39 @@ ggsave(filename = "figures/females_population.jpg", width = 300, height = 250,
 
 ```{r}
 # Arrange the top 10 counties by intersex population
-pop_county %>% arrange(-intersex) %>% slice(1:10) %>% 
+gr_003 <- pop_county %>% arrange(-intersex) %>% slice(1:10) %>% 
   select(county, intersex)
 ```
 
 The counties with highest number of intersex individuals were Nairobi, Kiambu, Nakuru, Wajir, Meru, Kakamega, Kajiado, Kisii, Mandera and Bungoma.
+
+```{r}
+# Plot a graph
+# write out the summary graph
+fig3 <- 
+gr_003 %>% 
+  ggplot(aes(x = reorder(county,intersex),
+             y = intersex)) +
+  geom_bar(stat = "identity", fill = "brown") +
+  # flip coordinates for better readability
+  coord_flip() +
+  # add theme and labels
+  labs(x = "County",
+       y = "Population of intersex individuals",
+       caption = "Source: Kenya Population and Housing Census Results 2019") +
+  theme_minimal() +
+  # Change scale
+  #scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) + # millions
+  # add font size
+  theme(axis.text = element_text(size = 13),
+        axis.title = element_text(size = 13),
+        plot.caption = element_text(size = 12))
+  fig3
+  # write figure
+ggsave(filename = "figures/intersex_population.jpg", width = 300, height = 250,
+       units = "mm", dpi = 600)
+```
+
 
 ```{r}
 # Arrange the top 10 counties by female:male ratio population

@@ -63,6 +63,14 @@ Figure 4: Ten counties with the highest number of female population
 
 The counties with the highest female population were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Machakos, Kisii, Mombasa.
 
+### Intersex population by counties
+
+This section lists the top 10 counties in terms of the intersex population.
+
+<img src="figures/intersex_population.jpg" alt="intersex population" width="600"/>
+
+Figure 5: Ten counties with the highest number of intersex population
+
 
 
 
