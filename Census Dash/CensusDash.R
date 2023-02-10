@@ -27,5 +27,5 @@ server <- function(input, output) {
 
 shinyApp(ui = ui, server = server)
 
-curl -u lordoferos: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 https://api.github.com/user
+
 git clone https://github.com/lordoferos/kenya_census.git
