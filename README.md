@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a project I did as part of the Google Data Analytics Professional Certificate in 2021. The data used was first published in the #TidyTuesday series of datasets that are published on GitHub and used by the R community to showcase various visualization techniques.
+This is part of a project I did for the Google Data Analytics Professional Certificate in 2021. The data used was first published in the #TidyTuesday series of datasets that are published on GitHub and used by the R community to showcase various visualization techniques.
 
 The data is obtained from the `rKenyaCensus` package courtesy of [Shelmith Kariuki](https://github.com/Shelmith-Kariuki).
 `rKenyaCensus` is an R package that contains the 2019 Kenya Population and Housing Census results. The results were released by the Kenya National Bureau of Statistics in February 2020, and published in four different pdf files (Volume 1 - Volume 4).
