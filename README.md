@@ -124,8 +124,8 @@ In summary, based on presence of analogue and functional TVs presence in the thr
 
 Table 1: New frontiers to explore for mid size companies
 
-| ------ | :----- |
 | **County** | **Media to focus on**|
+| ------ | :----- |
 | Nyeri | Radio, Internet, Functional TV  |
 | Kisumu | Radio, Internet, Analogue TV |
 | Machakos | Radio, Internet, Analogue TV |
