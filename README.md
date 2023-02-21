@@ -130,7 +130,7 @@ Table 1: New frontiers to explore for mid size companies
 | Kisumu | Radio, Internet, Analogue TV |
 | Machakos | Radio, Internet, Analogue TV |
 
-In this case, analogue TVs in Kenya can only access specific channels, which would be important to consider before putting out advertisements.
+In this case, analogue TVs in Kenya can only access [specific channels](https://hapakenya.com/2021/01/05/free-to-air-tv-stations-in-kenya/), which would be important to consider before putting out advertisements.
 
 
 
