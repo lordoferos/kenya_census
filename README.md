@@ -72,5 +72,40 @@ This section lists the top 10 counties in terms of the intersex population.
 Figure 5: Ten counties with the highest number of intersex population
 
 
+### Some things to consider
+
+**Population**
+
+- Siaya, Busia and HomaBay had the highest female: male ratio meaning more female population than that of males.
+
+- Garissa, Wajir, Lamu and Marsabit had the lowest female: male ratio meaning there was a higher male population than that of females.
+
+- The top 10 counties by population are Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Machakos, Kisii and Mombasa.
+
+- The bottom ten counties by population are Lamu, Isiolo, Samburu, Tana River, Taita Taveta, Tharaka Nithi, Marsabit, Elgeyo-Marakwet, Laikipia and Vihiga.
+
+**Household Size**
+
+- The top ten counties by average household size were Mandera (6.9), Wajir (6.1), Garissa (5.9), Marsabit (5.8), Turkana (5.6), West Pokot (5.3), Kwale (5.0), Kilifi (4.8), Narok (4.8), Samburu (4.7).
+
+- The bottom 10 counties by average household size were Nairobi (2.9), Nyeri (3.0), Kirinyaga (3.0), Kiambu (3.0), Mombasa (3.1), Embu (3.3), Murang'a (3.3), Laikipia (3.4), Taita Taveta (3.5) and Machakos (3.5).
+
+- There is a weak negative correlation (-0.29) between county population and the average household size.
+
+- The mean number of households for the counties with the highest household sizes is 428,180. We see that counties with high average household size have fewer households overall.
+
+- We see that counties with high average household size have fewer households (153,197) overall.
+
+**Births**
+
+- The counties with the most number of births in the past 5 years referenced 2019 were Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Mombasa, Narok and Kajiado.
+
+- The counties with the least number of total births in the past 5 years referenced 2019 were Lamu, Isiolo, Samburu, Taita Taveta, Tana River, Tharaka Nith, Marsabit, Elgeyo Marakwet, vihiga and Laikipia.
+
+- The counties with the least number of notified births were Wajir, Mandera, West Pokot, Marsabit, Turkana, Samburu, Garissa, Tana River, Isiolo and Narok.
+
+- 
+
+
 
 

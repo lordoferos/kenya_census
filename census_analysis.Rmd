@@ -188,12 +188,18 @@ pop_county %>% mutate(ratio = round(female/male,2)) %>%
 ## Households data
 
 ### Population
+
+```{r}
+# read in households data
+households <- read_csv("data/households.csv")
+```
+
 ```{r}
 # Arrange the top 10 counties by population
 households %>% arrange(-population) %>% slice(1:10)
 ```
 
-The top 10 counties by population are Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Macakos, Kisii and Mombasa.
+The top 10 counties by population are Nairobi, Kiambu, Nakuru, Kakamega, Bungoma, Meru, Kilifi, Machakos, Kisii and Mombasa.
 
 ```{r}
 # Arrange the bottom 10 counties by population
@@ -210,7 +216,7 @@ households %>% arrange(-average_household_size) %>% slice(1:10) %>%
   select(county, average_household_size)
 ```
 
-The top ten counties by average household size were Mandera, Wajir, Garissa, Marsabit, Turkana, West Pokot, Kwale, Kilifi, Narok, Samburu.
+The top ten counties by average household size were Mandera (6.9), Wajir (6.1), Garissa (5.9), Marsabit (5.8), Turkana (5.6), West Pokot (5.3), Kwale (5.0), Kilifi (4.8), Narok (4.8), Samburu (4.7).
 
 ```{r}
 # Arrange the bottom 10 counties by average household size
@@ -218,14 +224,14 @@ households %>% arrange(average_household_size) %>% slice(1:10) %>%
   select(county, average_household_size)
 ```
 
-The bottom 10 counties by average household size were Nairobi, Nyeri, Kirinyaga, Kiambu, Mombasa, Embu, Murang'a, Laikipia, Taita Taveta and Machakos.
+The bottom 10 counties by average household size were Nairobi (2.9), Nyeri (3.0), Kirinyaga (3.0), Kiambu (3.0), Mombasa (3.1), Embu (3.3), Murang'a (3.3), Laikipia (3.4), Taita Taveta (3.5) and Machakos (3.5).
 
 **Is average household size correlated with the population?**
 
 ```{r}
 cor(households$population, households$average_household_size)
 ```
-There is a weak negative correlation between population and the average household size.
+There is a weak negative correlation (-0.29) between county population and the average household size.
 
 What is the average number of households for the counties with the lowest household sizes?
 
