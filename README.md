@@ -108,19 +108,22 @@ Figure 5: Ten counties with the highest number of intersex population
 - The counties with the least number of notified births were Wajir, Mandera, West Pokot, Marsabit, Turkana, Samburu, Garissa, Tana River, Isiolo and Narok.
 
 
-## How can e-commerce companies identify emerging markets and expand marketing to potential markets.
+## How can e-commerce companies identify emerging markets and expand marketing to potential markets?
 
 The top ten counties with the highest owenership of stand alone radios were Nyeri, Nyandarua, Murang'a, Kirinyaga, Siaya, Kisumu, Laikipia, Machakos, Homa Bay and Embu.
 
 Radio is an important avenue in pushing advertising of e-commerce outlets. It is therefore important that a focus is made on radio for marketing online solutions/services to these counties.
-Out of the ten counties, Nyeri, Kisumu, Machakos and Laikipia were the most highly ranked in terms of access to the internet. Therefore, they should be first in line to roll out the marketing of online goods to.
-Further analysis showed that Machakos, Kisumu and Nyeri ranked top in terms of number of individuals who searched for goods online.
+
+Out of the ten counties, Nyeri, Kisumu, Machakos and Laikipia were the most highly ranked in terms of access to the internet. Therefore, they should be first in line to roll out the marketing of online goods to. Further analysis showed that Machakos, Kisumu and Nyeri ranked top in terms of number of individuals who searched for goods online.
+
 Therefore, a combination of radio, internet and existing demand of e-commerce shows that focus on these three counties would yield in good returns.
+
 Businesses should work on providing logistics to these counties and can then build success around their brands. Their marketing strategies should be on radio and via the internet to increase uptake of their services.
-However, based on presence of analogue and functional tvs presence in the three counties, the following combinations would work:
+
+In summary, based on presence of analogue and functional TVs presence in the three counties, the following combinations would work:
 
 Table 1: New frontiers to explore for mid size companies
-|        |        |
+
 | ------ | :----- |
 | **County** | **Media to focus on**|
 | Nyeri | Radio, Internet, Functional TV  |
