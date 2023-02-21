@@ -293,9 +293,53 @@ The counties with the least number of notified births were Wajir, Mandera, West 
 ### Stand alone radio
 ```{r}
 # Top counties with radio percentage ownership
-assets_owned %>% arrange(-stand_alone_radio) %>%
+radio <- assets_owned %>% arrange(-stand_alone_radio) %>%
   slice(1:10) %>% 
   select(county, stand_alone_radio)
+radio
 ```
 
+Ten top counties with the highest owenership of stand alone radios were Nyeri, Nyandarua, Murang'a, Kirinyaga, Siaya, Kisumu, Laikipia, Machakos, Homa Bay and Embu.
 
+If we compare this to internet and mobile devices/computers, we have the follwing:
+
+```{r}
+# compare radio, internet and mobile device use
+assets_owned %>% 
+  # internet, analogue tv and functional tv position
+  mutate(ranking = rank(-internet),
+         ranking_tv = rank(-analogue_tv),
+         ranking_tv2 = rank(-functional_tv)) %>% 
+  # filter radio use
+  filter(county %in% radio$county) %>% 
+  # select columns
+  select(county, stand_alone_radio, desk_top_computer_laptop_tablet, internet, ranking,
+         analogue_tv, ranking_tv, ranking_tv2) %>% 
+  arrange(ranking)
+```
+
+Out of the ten counties, Nyeri, Kisumu, Machakos and Laikipia were the most highly ranked in terms of access to the internet. Therefore, they should be first in line to roll out the marketing of online goods to.
+
+To verify this with goods bought online data:
+
+```{r}
+# read in goods online data
+goods <- read_csv("data/goods_online.csv")
+```
+```{r}
+# Add ranking based on goods search online
+goods %>% 
+  # add rank for number of online search
+  mutate(ranking = rank(-searched_online_total)) %>% 
+  # filter ten counties 
+  filter(county %in% radio$county) %>% 
+  # select columns
+  select(county, searched_online_total, searched_online_total_perc, ranking) %>% 
+  arrange(ranking)
+```
+
+Again, Machakos, Kisumu and Nyeri ranked top in terms of number of individuals who searched for goods online.
+
+In Nyeri use radio, internet and functional tv
+In Kisumu use radio, internet and analogue tv
+In Machakos use radio, internet and analogue tv
