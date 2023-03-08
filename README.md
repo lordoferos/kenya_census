@@ -36,7 +36,7 @@ Table 1: Project highlights and information
 
 # Methodology
 
-The methodology section of this work describes the tools and processes used to analyze and visualize data related to the 2019 census results in Kenya. The data analysis was conducted using the R programming language in R Studio Desktop, while data visualization was performed using Tableau and QGIS software.
+The methodology section of this work describes the tools and processes used to analyze and visualize data related to the 2019 census results in Kenya. The data analysis was conducted using the R programming language in R Studio, while data visualization was performed using Tableau and QGIS software.
 
 For data wrangling and munging, the tidyverse package was used in R, while various packages including tmap, rgdal, sp, sf, and raster were used for data visualization. These packages were essential for creating maps that provided detailed information about the areas in focus. In addition, QGIS software was also used to create additional maps to provide a better understanding of the study area.
 
